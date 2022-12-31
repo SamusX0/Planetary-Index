@@ -1,0 +1,81 @@
+/* Color palette for the website: Dominant (#8B6220), Secondary (#2C0703), Accent (#F7F9F9) */
+
+* {
+	font-family: Helvetica, sans-serif;
+}
+body {
+	background-color: #8B6220;
+	margin: 0;
+	margin-top: 80px;
+}
+
+/* Styling for the topnav. */
+
+.topnav {
+	overflow: hidden;
+	background-color: #2C0703;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.logo, .topnavLinks {
+	display: inline-block;
+	vertical-align: middle;
+}
+.topnavLinks a {
+	color: #F7F9F9;
+	font-size: 18px;
+	margin: 8px;
+	text-decoration: none;
+}
+.topnavLinks a:hover {
+	text-decoration: underline;
+}
+.logo a img {
+	float: left;
+	height: 40px;
+	margin: 20px;
+}
+
+/* Table with information about planets. */
+
+.planetTable table {
+	text-align: center;
+	margin-top: 120px;
+	margin-left: 60px;
+	border-collapse: collapse;
+}
+.planetTable table, .planetTable th, .planetTable td {
+	color: #2C0703;
+	border: 1px solid;
+	border-color: #2C0703;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+/* Styling for the footer. */
+
+footer {
+	position: fixed;
+	background-color: #2C0703;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer {
+	display: flex;
+    align-items: center;
+}
+.footer p {
+	color: #F7F9F9;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: 200;
+}
+.footer img {
+	margin-left: 22px;
+	height: 30px
+}

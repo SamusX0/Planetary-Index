@@ -1,41 +1,53 @@
-/* Color palette for the website: Dominant (#8B6220), Secondary (#2C0703), Accent (#F7F9F9) */
+:root {
+	--dominant-color: #55597f;
+	--secondary-color: #26283B;
+	--accent-color: #F7F9F9;
+}
 
 * {
-	font-family: Helvetica, sans-serif;
+	box-sizing: border-box;
 }
+
 body {
-	background-color: #8B6220;
-	margin: 0;
-	margin-top: 80px;
+	background-color: var(--dominant-color);
+	margin: 0px;
+}
+
+h1, h2, h3, a, p, span {
+	font-family: Helvetica, sans-serif;
+	color: var(--accent-color);
+}
+
+a {
+	text-decoration: none;
 }
 
 /* Styling for the topnav. */
 
-.topnav {
-	overflow: hidden;
-	background-color: #2C0703;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+nav {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid var(--accent-color);
+	background-color: var(--secondary-color);
 }
-.logo, .topnavLinks {
-	display: inline-block;
-	vertical-align: middle;
+
+nav > .nav-section {
+	padding: 2rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
 }
-.topnavLinks a {
-	color: #F7F9F9;
-	font-size: 18px;
-	margin: 8px;
-	text-decoration: none;
+
+#nav-logo-section,
+#nav-profile-section {
+	flex-basis: 10%;
 }
-.topnavLinks a:hover {
-	text-decoration: underline;
-}
-.logo a img {
-	float: left;
-	height: 40px;
-	margin: 20px;
+
+#nav-link-section {
+	flex-grow: 1;
+	border-left: 1px solid var(--accent-color);
+	border-right: 1px solid var(--accent-color);
 }
 
 /* Table with information about planets. */
@@ -48,9 +60,9 @@ body {
 	border-collapse: collapse;
 }
 .planetTable table, .planetTable th, .planetTable td {
-	color: #2C0703;
+	color: #F7F9F9;
 	border: 1px solid;
-	border-color: #2C0703;
+	border-color: #F7F9F9;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 4px;
@@ -61,7 +73,7 @@ body {
 
 footer {
 	position: fixed;
-	background-color: #2C0703;
+	background-color: #26283B;
 	bottom: 0;
 	left: 0;
 	right: 0;
